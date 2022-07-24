@@ -1,23 +1,31 @@
 import React from "react";
-import Header from "../Header";
 
 function Nav(props) {
-  const { contactSelected, setContactSelected } = props;
+  const { currentCategory, setCurrentCategory } = props;
 
-  function setPage() {}
+  //   const [categories] = useState([
+  //     { name: "contact" },
+  //     { name: "portfolio" },
+  //     { name: "resume" },
+  //     { name: "about" },
+  //   ]);
+  //0=Contact
+  //1=Portfolio
+  //2=Resume
+  //3=About
 
   return (
     <div>
-      <button onClick={() => setContactSelected(false)}>
+      <button onClick={() => setCurrentCategory(3)}>
         <br></br>About Me
       </button>
-      <button onClick={setPage("port")}>
+      <button onClick={() => setCurrentCategory(1)}>
         <br></br>Portfolio
       </button>
-      <button onClick={() => setContactSelected(true)}>
+      <button onClick={() => setCurrentCategory(0)}>
         <br></br>Contact
       </button>
-      <button onClick={setPage("resume")}>
+      <button onClick={() => setCurrentCategory(2)}>
         <br></br>Resume
       </button>
     </div>

@@ -80,7 +80,9 @@ button {
 .about {
   margin: 50px auto 0 auto;
   width: 60%;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .aboutMe {
@@ -95,10 +97,65 @@ button {
   margin-top: 200px;
 }
 
+.contactForm textarea,
+input {
+  width: 60%;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.resume {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.resume section {
+  text-align: center;
+  width: 30%;
+}
+
+.resume p {
+  color: orange;
+  list-style: none;
+}
+
+.resume ul {
+  list-style: none;
+}
+
+.project {
+  background-color: var(--light-slate-gray);
+  width: 40%;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer {
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   button {
     font-size: medium;
     padding-top: 15px;
     margin: 5px;
+  }
+
+  .about {
+    width: 80%;
   }
 }

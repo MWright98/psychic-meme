@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {
@@ -14,35 +15,68 @@ function App() {
     { name: "about" },
   ]);
 
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
 
-  return (
-    <div className="App">
-      {!contactSelected ? (
-        <>
+  switch (currentCategory) {
+    default:
+      return (
+        <div>
           <Header
-            contactSelected={contactSelected}
-            setContactSelected={setContactSelected}
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
           />
           <About />
           <Footer />
-        </>
-      ) : (
-        <>
+        </div>
+      );
+
+    case 0:
+      return (
+        <div>
           <Header
-            contactSelected={contactSelected}
-            setContactSelected={setContactSelected}
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
           />
-
           <Contact />
-
           <Footer />
-        </>
-      )}
-    </div>
-  );
+        </div>
+      );
+    case 1:
+      return (
+        <div>
+          <Header
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
+          <Portfolio />
+          <Footer />
+        </div>
+      );
+    case 2:
+      return (
+        <div>
+          <Header
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
+          <Resume />
+          <Footer />
+        </div>
+      );
+    case 3:
+      return (
+        <div>
+          <Header
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
+          <About />
+          <Footer />
+        </div>
+      );
+  }
 }
 
 export default App;

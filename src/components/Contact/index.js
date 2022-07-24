@@ -81,6 +81,7 @@ function ContactForm() {
           Submit
         </button>
       </form>
+      <p>You can also reach me through email at mwright7272@gmail.com</p>
     </section>
   );
 }

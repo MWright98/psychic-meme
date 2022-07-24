@@ -9,6 +9,7 @@ function About() {
         key={Image.name}
         className="headshot"
       />
+      <br></br>
       <p className="aboutMe">
         Hello! My name is Michael Wright! I am currently studying to become a
         full stack web developer! I graduated form Indiana University South Bend
