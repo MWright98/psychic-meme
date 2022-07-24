@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Nav from "./components/Nav";
 import "./App.css";
 
 function App() {
@@ -14,13 +16,31 @@ function App() {
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  // const [contactSelected, setContactSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div className="App">
-      <Header />
-      <About />
-      <Footer />
+      {!contactSelected ? (
+        <>
+          <Header
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+          />
+          <About />
+          <Footer />
+        </>
+      ) : (
+        <>
+          <Header
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+          />
+
+          <Contact />
+
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
