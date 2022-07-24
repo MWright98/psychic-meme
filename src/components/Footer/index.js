@@ -4,7 +4,8 @@ function Footer() {
   return (
     <footer>
       <h2>Made with love by Michael Wright ♥</h2>
-      <button>Github</button>
+      <a href="https://github.com/MWright98">Github</a>
+      <a href="mailto:@mwright7272@gmail.com">Email</a>
     </footer>
   );
 }
