@@ -45,16 +45,38 @@ function Project() {
       {projects.map((project, i) => (
         <>
           <div className="project">
-            <h2 key={"title" + project.title}>{project.title}</h2>
-            <p key={"description" + project.title}>{project.description}</p>
+            <div className="row">
+              <div className="column">
+                <h2 key={"title" + project.title}>{project.title}</h2>
 
-            <a key={["git"] + project.title} href={project.github}>
-              {"Github"}
-            </a>
-            <br></br>
-            <a key={"link" + project.link} href={project.link}>
-              Deployment
-            </a>
+                <p key={"description" + project.title}>{project.description}</p>
+                <div className="projectLinks">
+                  <a key={["git"] + project.title} href={project.github}>
+                    <img
+                      className="githubIcon"
+                      alt="github"
+                      src={require(`../../assets/img/github.png`)}
+                    ></img>
+                  </a>
+
+                  <a key={"link" + project.link} href={project.link}>
+                    <img
+                      className="githubIcon"
+                      alt="deployment"
+                      src={require(`../../assets/img/deployed.png`)}
+                    ></img>
+                  </a>
+                </div>
+              </div>
+              <div className="column">
+                <img
+                  src={require(`../../assets/img/project${i + 1}.jpg`)}
+                  alt={project.title}
+                  className="projectImg"
+                  key={"image" + [i]}
+                />
+              </div>
+            </div>
           </div>
         </>
       ))}

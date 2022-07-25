@@ -16,16 +16,16 @@ function Nav(props) {
 
   return (
     <div>
-      <button onClick={() => setCurrentCategory(3)}>
+      <button className="navBtn" onClick={() => setCurrentCategory(3)}>
         <br></br>About Me
       </button>
-      <button onClick={() => setCurrentCategory(1)}>
+      <button className="navBtn" onClick={() => setCurrentCategory(1)}>
         <br></br>Portfolio
       </button>
-      <button onClick={() => setCurrentCategory(0)}>
+      <button className="navBtn" onClick={() => setCurrentCategory(0)}>
         <br></br>Contact
       </button>
-      <button onClick={() => setCurrentCategory(2)}>
+      <button className="navBtn" onClick={() => setCurrentCategory(2)}>
         <br></br>Resume
       </button>
     </div>

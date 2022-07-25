@@ -4,8 +4,20 @@ function Footer() {
   return (
     <footer>
       <h2>Made with love by Michael Wright ♥</h2>
-      <a href="https://github.com/MWright98">Github</a>
-      <a href="mailto:@mwright7272@gmail.com">Email</a>
+      <div className="links">
+        <img
+          onClick={() => (window.location = "https://github.com/MWright98")}
+          alt="github"
+          src={require(`../../assets/img/github.png`)}
+        ></img>
+        <img
+          onClick={() =>
+            (window.location = "https://www.linkedin.com/in/michaelwright98/")
+          }
+          alt="linkedin"
+          src={require(`../../assets/img/linkedin.png`)}
+        ></img>
+      </div>
     </footer>
   );
 }
