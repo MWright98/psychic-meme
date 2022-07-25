@@ -15,6 +15,8 @@ function App() {
     { name: "about" },
   ]);
 
+  document.title = "Michael Wright Portfolio";
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   // const [contactSelected, setContactSelected] = useState(false);
