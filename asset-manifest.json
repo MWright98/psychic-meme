@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/psychic-meme/static/css/main.dd47d1b5.css",
+    "main.js": "/psychic-meme/static/js/main.07997d6b.js",
+    "static/js/787.a2cb61a6.chunk.js": "/psychic-meme/static/js/787.a2cb61a6.chunk.js",
+    "static/media/project3.jpg": "/psychic-meme/static/media/project3.ebd23c929784f572e732.jpg",
+    "static/media/Headshot.jpg": "/psychic-meme/static/media/Headshot.a62afb7d61d0339d6e4e.jpg",
+    "static/media/project5.jpg": "/psychic-meme/static/media/project5.8dcb85d55097ee608975.jpg",
+    "static/media/project6.jpg": "/psychic-meme/static/media/project6.fb25e17c49327410b9dc.jpg",
+    "static/media/deployed.png": "/psychic-meme/static/media/deployed.3b246639dc81af9defc8.png",
+    "static/media/project2.jpg": "/psychic-meme/static/media/project2.bc18d7d432bfdeaea41c.jpg",
+    "static/media/project4.jpg": "/psychic-meme/static/media/project4.426b145a73ff05ef5be9.jpg",
+    "static/media/project1.jpg": "/psychic-meme/static/media/project1.8315df6dd76d4d5957a2.jpg",
+    "index.html": "/psychic-meme/index.html",
+    "main.dd47d1b5.css.map": "/psychic-meme/static/css/main.dd47d1b5.css.map",
+    "main.07997d6b.js.map": "/psychic-meme/static/js/main.07997d6b.js.map",
+    "787.a2cb61a6.chunk.js.map": "/psychic-meme/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd47d1b5.css",
+    "static/js/main.07997d6b.js"
+  ]
+}
